@@ -2,6 +2,13 @@
 
 A script to crawl through all of the recipes hosted over at [Emacs Themes](https://emacsthemes.com/) and download each, copying them into the specified theme directory.
 
+## requirements
+
+Before you can use this script, you need to install [JSON](https://metacpan.org/pod/JSON):
+'''
+cpan JSON
+'''
+
 ## usage
 
 Usage: `perl emacsthemes-downloader.pl`

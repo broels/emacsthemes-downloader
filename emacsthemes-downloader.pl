@@ -37,8 +37,7 @@ foreach (@recipes) {
 	my $recipe_path = $recipe_dest . '/' . $$recipe_json{name};
 	if (-d "$recipe_path") {
 		`cd "$recipe_path" && git pull`;
-	}
-	else {
+	} else {
 		`git clone $recipe_source "$recipe_path"`;
 	}
 };
