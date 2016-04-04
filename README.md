@@ -5,9 +5,9 @@ A script to crawl through all of the recipes hosted over at [Emacs Themes](https
 ## requirements
 
 Before you can use this script, you need to install [JSON](https://metacpan.org/pod/JSON):
-'''
+```
 cpan JSON
-'''
+```
 
 ## usage
 
