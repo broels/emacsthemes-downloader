@@ -15,7 +15,7 @@ To load the directory with all of the downloaded themes when Emacs is started:
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 ```
 
-To try out themes one-by-one (thanks to [u/bakuretsu](https://www.reddit.com/r/emacs/comments/30b67j/how_can_you_reset_emacs_to_the_default_theme/cpr8bsn):
+To try out themes one-by-one (thanks to [u/bakuretsu](https://www.reddit.com/r/emacs/comments/30b67j/how_can_you_reset_emacs_to_the_default_theme/cpr8bsn)):
 ```
 (defun load-only-theme ()
   "Disable all themes and then load a single theme interactively."
