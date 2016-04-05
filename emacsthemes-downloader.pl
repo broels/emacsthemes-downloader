@@ -6,8 +6,11 @@ use JSON;
 
 my $working = "/tmp/emacs-themes";
 my $themes_source = "https://github.com/emacs-themes/emacs-themes-site.git";
-my $recipe_dest = "~/.emacs.d/gits/themes";
-my $themes_dest = "~/.emacs.d/themes";
+my $recipe_dest = "$ENV{HOME}/.emacs.d/gits/themes";
+my $themes_dest = "$ENV{HOME}/.emacs.d/themes";
+
+# ensure the existence of destination directories
+`mkdir -p $recipe_dest $themes_dest`;
 
 # clone the emacs-themes-site repo
 if (-d $working) {
@@ -43,5 +46,5 @@ foreach (@recipes) {
 };
 
 # copy the '*-theme.el's to the themes directory
-`mkdir $themes_dest && find $recipe_dest -name "*-theme.el" -type f -exec cp {} $themes_dest \\;`;
+`find $recipe_dest -name "*-theme.el" -type f -exec cp {} $themes_dest \\;`;
 
