@@ -38,5 +38,4 @@ This script will **not** work with certain themes, if you experience any issues 
 
 ## license
 
-This project is licensed under the terms of the BSD license.
-
+Hands off my trash.
